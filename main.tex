@@ -83,6 +83,13 @@
 \usepackage[style=ieee, backend=biber]{biblatex}
 \addbibresource{references.bib}
 
+\usepackage{tocloft}
+\setlength{\cftbeforefigskip}{10pt}
+\setlength{\cftbeforetabskip}{10pt}
+\setlength{\cftfignumwidth}{4em}
+\setlength{\cfttabnumwidth}{4em}
+\setlength\bibitemsep{10pt}
+
 \title{QoS-Aware Resource Allocation and Performance Evaluation for 5G Network Slicing Under Nakagami-$m$ Fading: A Multi-RB Uplink H-NOMA Study for eMBB and URLLC}
 \author{Author Name}
 \date{\today}
@@ -616,7 +623,6 @@ they can be followed and implemented in MATLAB.
 
 \subsection{4.1 SINR Threshold
 Derivation}\label{sinr-threshold-derivation}
-
 The Shannon capacity approximation relates the achievable rate to the
 SINR and the allocated bandwidth. For a slice \(i\), the capacity is
 
@@ -633,8 +639,6 @@ R_{i} &= B_{i} \log_{2}(1 + \gamma_{th,i}) \\[1ex]
 2^{\frac{R_{i}}{B_{i}}} &= 1 + \gamma_{th,i} \\[1ex]
 \gamma_{th,i} &= 2^{\frac{R_{i}}{B_{i}}} - 1
 \end{align}
-
-\subsection{}\label{section-1}
 
 \subsection{4.2 eMBB Outage Probability
 Derivation}\label{embb-outage-probability-derivation}
@@ -886,7 +890,7 @@ improve both links because fading becomes less severe.
     \end{subfigure}\hfill
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{media/fig2_Urllc_outage.png}
+        \includegraphics[height= 4.9cm, width=\textwidth]{media/fig2_Urllc_outage.png}
         \caption{}
         \label{fig:capacity-right}
     \end{subfigure}
@@ -1153,7 +1157,9 @@ scenarios, and emerging 6G network architectures.
 
 \clearpage
 
-\printbibliography[title={References}]
+\cleardoublepage
+\phantomsection
 \addcontentsline{toc}{section}{References}
+\printbibliography[title={References}]
 
 \end{document}
