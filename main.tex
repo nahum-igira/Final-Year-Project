@@ -4,6 +4,7 @@
 \documentclass[
 ]{article}
 \usepackage{xcolor}
+\definecolor{urblue}{RGB}{0,84,159}
 \usepackage{amsmath,amssymb}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{iftex}
@@ -93,10 +94,80 @@
 
 % Cover page
 \begin{titlepage}
-\maketitle
-\thispagestyle{empty}
+\centering
+
+%==================== HEADER ====================%
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \vspace{0pt}
+    \includegraphics[width=4.5cm]{media/ur_logo.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \vspace{12pt}
+    \raggedleft
+    \color{urblue}\textbf{COLLEGE OF SCIENCE}\\
+    \color{urblue}\textbf{AND TECHNOLOGY}
+\end{minipage}
+\vspace{2cm}
+
+%==================== SCHOOL ====================%
+{\Large\bfseries\color{urblue} SCHOOL OF ENGINEERING} \\
+\vspace{0.7cm}
+{\large\bfseries DEPARTMENT OF ELECTRICAL AND ELECTRONICS}
+\vspace{0.3cm}
+{\large\bfseries ENGINEERING}
+\vspace{1cm}
+
+%==================== PROJECT TITLE ====================%
+{\large\bfseries
+QoS-Aware Resource Allocation and Performance\\
+Evaluation for 5G Network Slicing Under\\
+Nakagami-$m$ Fading: A Multi-RB Uplink\\
+H-NOMA Study for eMBB and URLLC
+}
+
+\vspace{1cm}
+
+%==================== STUDENTS ====================%
+\textit{
+Nahum IGIRANEZA -- 222018327\\[0.15cm]
+Louis Clement ABAYO -- 222004020\\[0.15cm]
+Shema Dolph NSENGIYUMVA -- 222009353
+}
+
+\vspace{0.8cm}
+
+June 2026
+
+\vspace{1.2cm}
+
+{\large\bfseries Undergraduate Final Year Project}
+
+\vfill
+
+%==================== DEGREE BOX ====================%
+\fcolorbox{black}{cyan!55}{
+\begin{minipage}{0.94\textwidth}
+\centering
+\vspace{0.15cm}
+
+\textbf{Bachelor of Science in Electronics and Telecommunication Engineering}
+
+\vspace{0.15cm}
+
+\textbf{Supervisor: Prof. Charles KABIRI}
+
+\vspace{0.15cm}
+\end{minipage}
+}
+
+\vspace{0.6cm}
+
+\begin{flushleft}
+\textbf{Project ID:} EEE/ETE/2025-2026/01
+\end{flushleft}
 \end{titlepage}
-\clearpage
 
 % Dedication
 \section*{Dedication}
@@ -136,9 +207,11 @@ is our own original work and has not been submitted, either in whole or in part,
 
 Nahum IGIRANEZA & 222018327 & \hrulefill \\[0.7cm]
 
-Shema Dolph NSENGIYUMVA & 222009353 & \hrulefill \\[0.7cm]
+Louis Clement ABAYO & 222004020 & \hrulefill \\[0.7cm]
 
-Louis Clement ABAYO & 222004020 & \hrulefill \\
+Shema Dolph NSENGIYUMVA & 222009353 & \hrulefill \\
+
+
 \end{tabular}
 
 \vspace{1cm}
